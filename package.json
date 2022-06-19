@@ -4,9 +4,9 @@
   "description": "Portfolio prototype, used to learn webpack, babel, tailwindcss (and twin-macro)",
   "main": "src/main.tsx",
   "scripts": {
-    "build:d": "webpack --mode development",
-    "build:p": "webpack --mode production",
-    "start": "webpack serve --hot --mode development",
+    "build:d": "cross-env NODE_ENV=development webpack --mode development",
+    "build:p": "cross-env NODE_ENV=production webpack --mode production",
+    "start": "cross-env NODE_ENV=development webpack serve --hot --mode development",
     "test": "jest"
   },
   "keywords": [
@@ -32,6 +32,7 @@
     "html-webpack-plugin": "^5.5.0",
     "jest": "^28.1.1",
     "postcss-loader": "^7.0.0",
+    "react-refresh": "^0.13.0",
     "style-loader": "^3.3.1",
     "typescript": "^4.7.3",
     "url-loader": "^4.1.1",
@@ -45,10 +46,10 @@
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.7",
+    "cross-env": "^7.0.3",
     "gsap": "^3.10.4",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
-    "react-refresh": "^0.13.0",
     "tailwindcss": "^3.1.3",
     "terser-webpack-plugin": "^5.3.3",
     "twin.macro": "^2.8.2"
