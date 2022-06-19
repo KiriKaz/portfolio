@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "module": "es6",
+    "moduleResolution": "node",
+    "target": "ES5",
+    "allowJs": true,
+    "jsx": "preserve",
+    "jsxImportSource": "@emotion/react",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "include": [
+    "./src/**/*", "types"
+  ]
+}
